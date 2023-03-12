@@ -84,7 +84,7 @@ ENetPacket* onPacketCreate(char* format, ...) {
     struct GameUpdatePacket packet_t;
     memset(&packet_t, 0, 60);
 
-    packet_t.type = 4;
+    packet_t.type = NET_MESSAGE_GAME_PACKET;
     packet_t.netid = 1;
     packet_t.item = -1;
     packet_t.int_var = 8;
